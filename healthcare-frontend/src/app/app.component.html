@@ -1,0 +1,22 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">Healthcare Appointment System</div>
+    <nav>
+      <a routerLink="/appointment" routerLinkActive="active">Appointments</a>
+      <a routerLink="/history" routerLinkActive="active">Medical History</a>
+      <a routerLink="/notifications" routerLinkActive="active">Notifications</a>
+      <a routerLink="/account" routerLinkActive="active">Account</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <div class="spacer"></div>
+      <div class="avatar">👤</div>
+    </header>
+
+    <section class="panel">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,61 @@
+<h2>📅 Let's Book Your Appointment</h2>
+
+<!-- Symptoms input -->
+<label for="symptoms">🤒 How are you feeling today?</label>
+<input
+  id="symptoms"
+  [(ngModel)]="appointment.symptoms"
+  placeholder="E.g. Fever, chest pain, itchy skin..."
+/>
+<button (click)="analyze()">🔍 Analyze Symptoms</button>
+
+<!-- Specialist suggestion -->
+<div *ngIf="appointment.specialist">
+  <h3>👨‍⚕️ Suggested Specialist</h3>
+  <p><strong>{{ appointment.specialist }}</strong> is the best fit based on your symptoms.</p>
+  <button (click)="selectSpecialist()">✅ Select This Specialist</button>
+</div>
+
+<!-- Slot selection -->
+<h3 style="margin-top: 2rem;">📆 Choose Your Appointment Slot</h3>
+<label for="date">🗓️ Select Date</label><br />
+<input type="date" id="date" [(ngModel)]="appointment.date" />
+
+<br />
+
+<label for="time">⏰ Select Time</label><br />
+<input type="time" id="time" [(ngModel)]="appointment.time" />
+
+<!-- Book button -->
+<br />
+<button (click)="bookAppointment()">📥 Confirm & Book</button>
+
+<!-- Divider -->
+<hr style="margin: 3rem 0; border: 0; height: 1px; background: #ccc;" />
+
+<!-- Appointments list -->
+<h3>📖 Your Appointment History</h3>
+<p *ngIf="appointments.length === 0" style="color: gray;">
+  No appointments booked yet. Your upcoming visits will appear here!
+</p>
+
+<table *ngIf="appointments.length > 0">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>📝 Symptoms</th>
+      <th>👨‍⚕️ Specialist</th>
+      <th>📅 Date</th>
+      <th>⏰ Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let app of appointments">
+      <td>{{ app.id }}</td>
+      <td>{{ app.symptoms }}</td>
+      <td>{{ app.specialist }}</td>
+      <td>{{ app.date }}</td>
+      <td>{{ app.time }}</td>
+    </tr>
+  </tbody>
+</table>
