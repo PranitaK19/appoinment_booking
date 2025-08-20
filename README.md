@@ -6,9 +6,9 @@ A full-stack web application for managing doctor appointments online. This proje
 
 ## 🤝 Group Members
 
-**Khendkar Pranita**
-**More Sayali**
-**Yadav Sanskruti**
+**Khendkar Pranita**  
+**More Sayali**  
+**Yadav Sanskruti**  
 
 ---
 
