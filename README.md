@@ -89,8 +89,8 @@ healthcare-backend/
 **🖼️ UI** 
 
 
-<img width="1896" height="971" alt="frontend_f" src="https://github.com/user-attachments/assets/423c3279-bab4-4dbc-9e67-fa4e135fc20d" />
-  
+<img width="1856" height="896" alt="frontend_f" src="https://github.com/user-attachments/assets/c4df8f93-c69d-45c1-bc7a-e8291baaf506" />
+
 <img width="1490" height="538" alt="P_History" src="https://github.com/user-attachments/assets/5cd25968-f6a4-42b0-b91a-513facda209f" />
 
 ---
